@@ -69,7 +69,7 @@ function Formulario() {
 
                             <Form.Group>
                                 <Form.Label>CEP</Form.Label>
-                                <Form.Control type="number" onChange={(e) => setCep(e.target.value)} placeholder="00000-000" />
+                                <Form.Control type="text" onChange={(e) => setCep(e.target.value)} placeholder="00000-000" />
                                 <Button onClick={()=> buscarCep()}>Buscar</Button>
                                 <br></br>
                                 <Form.Label>Cidade: {cepResultado.city}</Form.Label>

@@ -9,47 +9,56 @@
 }
 
 h2{
-text-align: center;
+  text-align: center;
 }
 
-.Processador{
-
-  background-image: linear-gradient(#fff,);
-    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
-    font-family: Montserrat, sans-serif;
-    margin: 15px ;
-    padding: 50px 50px;
-    display: inline-block;  
-
-}
-
-.PlacaDeVideo{
+.cpu{
   background-image: linear-gradient(#fff,);
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
   font-family: Montserrat, sans-serif;
-  margin: 20px ;
+  margin-right: 300px;
+  margin: 50px;
   padding: 50px 50px;
-  display: inline-block;  
+  display: inline-block;
+  width: 290px;
+  height: 430px;
 }
 
-.PlacaMae{
-
+.gpu{
   background-image: linear-gradient(#fff,);
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
   font-family: Montserrat, sans-serif;
-  margin: 20px ;
+  margin: 50px;
   padding: 50px 50px;
-  display: inline-block;  
-
+  display: inline-block;
+  width: 290px;
+  height: 430px;
+  align-items: center;
 }
 
-.Memoria{
-
+.motherboard{
   background-image: linear-gradient(#fff,);
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
   font-family: Montserrat, sans-serif;
-  margin: 15px ;
+  margin: 50px;
+  padding: 50px 50px;
+  display: inline-block;
+  width: 290px;
+  height: 430px;
+}
+
+.memory{
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 50px;
   padding: 50px 50px;
   display: inline-block;  
+  width: 290px;
+  height: 430px;
+}
 
+p{
+  width: 190px;
+  height: 60px;
 }
