@@ -1,0 +1,55 @@
+.Logo{
+  background-image: linear-gradient(#191970,  #ffffff);
+  color: #fff;
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  padding: 50px 50px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h2{
+text-align: center;
+}
+
+.Processador{
+
+  background-image: linear-gradient(#fff,);
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+    font-family: Montserrat, sans-serif;
+    margin: 15px ;
+    padding: 50px 50px;
+    display: inline-block;  
+
+}
+
+.PlacaDeVideo{
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 20px ;
+  padding: 50px 50px;
+  display: inline-block;  
+}
+
+.PlacaMae{
+
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 20px ;
+  padding: 50px 50px;
+  display: inline-block;  
+
+}
+
+.Memoria{
+
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 15px ;
+  padding: 50px 50px;
+  display: inline-block;  
+
+}
