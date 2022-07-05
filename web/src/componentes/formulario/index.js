@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 
-import { Form, Button, Col, Row } from 'react-bootstrap'
+import { Form, Button, Row } from 'react-bootstrap'
 import axios from 'axios'
 
 
 function Formulario() {
-    const [nome, setNome] = useState(""),
-        [cpf, setCpf] = useState(""),
+    const [cpf, setCpf] = useState(""),
         [email, setEmail] = useState(""),
         [cep, setCep] = useState(""),
         [titular, setTitular] = useState(""),
@@ -19,8 +18,7 @@ function Formulario() {
     
 
     function exibirDados() {
-        if (nome.trim() === ""
-            || cpf.trim() === ""
+        if ( cpf.trim() === ""
             || email.trim() === ""
             || cep.trim() === ""
             || titular.trim() === ""
@@ -48,15 +46,10 @@ function Formulario() {
     return (
         <div>
             <div className='formulario'>
-
                 {(() => {
                     if (obs === true) {
-                        return (<>
-                            <Form.Group>
-                                <Form.Label>Nome</Form.Label>
-                                <Form.Control type="text" placeholder="Escreva seu nome" onChange={(e) => setNome(e.target.value)} />
-                            </Form.Group>
-
+                        return (
+                        <>
                             <Form.Group>
                                 <Form.Label>CPF</Form.Label>
                                 <Form.Control type="number" placeholder="Escreva seu CPF" onChange={(e) => setCpf(e.target.value)} />
@@ -71,13 +64,13 @@ function Formulario() {
                                 <Form.Label>CEP</Form.Label>
                                 <Form.Control type="text" onChange={(e) => setCep(e.target.value)} placeholder="00000-000" />
                                 <Button onClick={()=> buscarCep()}>Buscar</Button>
-                                <br></br>
+                                <br/><br/>
                                 <Form.Label>Cidade: {cepResultado.city}</Form.Label>
-                                <br></br>
+                                <br/>
                                 <Form.Label>Logradouro:{cepResultado.neighborhood} </Form.Label>
-                                <br></br>
+                                <br/>
                                 <Form.Label>Estado: {cepResultado.state}</Form.Label>
-                                <br></br>
+                                <br/>
                                 <Form.Label>Rua: {cepResultado.street}</Form.Label>
                             </Form.Group>
 
@@ -104,55 +97,47 @@ function Formulario() {
                             <Button variant="primary" onClick={() => exibirDados()}>
                                 Concluir
                             </Button>
-                        </>)
+                        </>
+                        )
                     } else {
-                        return (<>
-                            <h1>COMPRA EFETUADA COM SUCESSO!</h1>
-                            <br/>
-                            <div style={{ marginLeft: "20px" }}>
-                                <Form.Group as={Row}>
-                                    <Form.Label column sm="1">
-                                        Nome:
-                                </Form.Label>
-                                    <Col sm="10">
-                                        <Form.Control plaintext readOnly defaultValue={nome} />
-                                    </Col>
-                                </Form.Group>
+                        return (
+                            <>
+                                <h1>COMPRA EFETUADA COM SUCESSO!</h1>
+                                <br/>
+                                <div>
+                                    <Form.Group as={Row}>
+                                        <Form.Label column sm="2">
+                                            Nome:
+                                        </Form.Label>
+                                            <Form.Control plaintext readOnly defaultValue={titular} />
+                                    </Form.Group>
 
-                                <Form.Group as={Row}>
-                                    <Form.Label column sm="1">
-                                        CPF:
-                                </Form.Label>
-                                    <Col sm="10">
-                                        <Form.Control plaintext readOnly defaultValue={cpf} />
-                                    </Col>
-                                </Form.Group>
+                                    <Form.Group as={Row}>
+                                        <Form.Label column sm="2">
+                                            CPF:
+                                        </Form.Label>
+                                            <Form.Control plaintext readOnly defaultValue={cpf} />
+                                    </Form.Group>
 
-                                <Form.Group as={Row}>
-                                    <Form.Label column sm="1">
-                                        E-mail:
-                                </Form.Label>
-                                    <Col sm="10">
-                                        <Form.Control plaintext readOnly defaultValue={email} />
-                                    </Col>
-                                </Form.Group>
+                                    <Form.Group as={Row}>
+                                        <Form.Label column sm="2">
+                                            E-mail:
+                                        </Form.Label>
+                                            <Form.Control plaintext readOnly defaultValue={email} />
+                                    </Form.Group>
 
-                                <Form.Group as={Row}>
-                                    <Form.Label column sm="1">
-                                        CEP:
-                                </Form.Label>
-                                    <Col sm="10">
-                                        <Form.Control plaintext readOnly defaultValue={cep}  />
-                                    </Col>
-                                </Form.Group>
-                            </div>
-                            <Button variant="primary" onClick={() => setObs(true)}>Finalizar</Button>
-                        </>)
+                                    <Form.Group as={Row}>
+                                        <Form.Label column sm="2">
+                                            CEP:
+                                        </Form.Label>
+                                            <Form.Control plaintext readOnly defaultValue={cep}  />
+                                    </Form.Group>
+                                </div>
+                                <Button variant="primary" onClick={() => setObs(true)}>Finalizar</Button>
+                            </>
+                        )
                     }
-
                 })()}
-
-
             </div>
         </div>
     )
