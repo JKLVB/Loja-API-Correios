@@ -18,13 +18,13 @@ function Suporte(){
     }
 
     return(
-        <div className='formulario'>
-            <Form.Group>
+        <div>
+            <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="name@example.com" onChange={(e) => setEmail(e.target.value)}/>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Descrição do Assunto</Form.Label>
                 <Form.Control as="textarea" rows="3" onChange={(e) => setDescricao(e.target.value)}/>
             </Form.Group>

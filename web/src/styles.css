@@ -1,4 +1,4 @@
-.logo{
+.Logo{
   background-image: linear-gradient(#191970,  #ffffff);
   color: #fff;
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
@@ -8,25 +8,11 @@
   border-radius: 5px;
 }
 
-.items{
-  text-align: center;
-}
-
-.title{
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-}
-
-img{
-  width: 170px;
-  height: 170px;
-}
-
 h2{
   text-align: center;
 }
 
-.card{
+.cpu{
   background-image: linear-gradient(#fff,);
   box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
   font-family: Montserrat, sans-serif;
@@ -36,17 +22,43 @@ h2{
   display: inline-block;
   width: 290px;
   height: 430px;
-  text-align: left;
+}
+
+.gpu{
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 50px;
+  padding: 50px 50px;
+  display: inline-block;
+  width: 290px;
+  height: 430px;
+  align-items: center;
+}
+
+.motherboard{
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 50px;
+  padding: 50px 50px;
+  display: inline-block;
+  width: 290px;
+  height: 430px;
+}
+
+.memory{
+  background-image: linear-gradient(#fff,);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.342);
+  font-family: Montserrat, sans-serif;
+  margin: 50px;
+  padding: 50px 50px;
+  display: inline-block;  
+  width: 290px;
+  height: 430px;
 }
 
 p{
   width: 190px;
   height: 60px;
-}
-
-.formulario{
-
-  text-align: left;
-  width: 25%;
-  margin-left: 35%;
 }
